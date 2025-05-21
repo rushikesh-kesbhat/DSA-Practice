@@ -16,6 +16,7 @@ class SpiralMatrix{
                  arr[i][j]= sc.nextInt();
             }
         }
+        spiralMatrix(arr,row,col);
 
     }
     static void spiralMatrix(int[][] arr,int row,int col){
@@ -24,28 +25,30 @@ class SpiralMatrix{
         int bottomRow= row-1;
         int leftCol=0;
 //Need to check
-        while(){
-            for(int i=toprow;i<rightCol;i++){
+int count= 0;
+        while(count< row * col){
+            for(int i=leftCol;i<=rightCol;i++){
                 System.out.print(" "+ arr[toprow][i]);
+                count++;
             }
             toprow++;
 
-            for(int i=toprow;i<rightCol;i++){
+            for(int i=toprow;i<=bottomRow;i++){
                 System.out.print(" "+ arr[i][rightCol]);
+                count++;
             }
             rightCol--;
-
-            for(int i=rightCol;i>leftCol;i--){
+            for(int i=rightCol;i>=leftCol;i--){
                 System.out.print(" "+ arr[bottomRow][i]);
+                count++;
             }
             bottomRow--;
 
-               for(int i=rightCol;i>leftCol;i--){
-                System.out.print(" "+ arr[bottomRow][i]);
+               for(int i=bottomRow;i>=toprow;i--){
+                System.out.print(" "+ arr[i][leftCol]);
+                count++;
             }
-            bottomRow--;
-
-
+            leftCol++;
         }
     }
 
