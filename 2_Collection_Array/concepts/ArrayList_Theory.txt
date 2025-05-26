@@ -1,0 +1,72 @@
+Wrapper Class
+
+- A class whose object contains or wraps Primitive Data Type(PDT)
+	PDT-> int , float , boolean
+	
+- Object Of a wrapper class contains  a field which stores PDT.
+
+		PDT			Wrapper Class
+		
+		int 	--> Integer
+		float	--> Float
+		Char 	--> Boolean
+		long	--> Long
+		
+		* String is not a PDT
+		
+//Wrapper Classes
+
+Integer i= Integer.valueOf(4);
+
+Float f = Float.valueOf(4.5);
+
+
+****// ArrayList \\\\*****
+
+Syntax:
+
+List<AnyClass> list= new ArrayList<AnyClass>();
+
+ArrayList<Integer> l1 = new ArrayList<>();
+
+
+//Add New Element 
+
+l1.add(5);
+l1.add(6);
+l1.add(7);
+
+// Get an element at index index i
+System.out.println(l1.get(1));
+
+//Print with for loop
+
+for(int i=0;i<l1.size();i++){
+	System.out.println(l1.get(i)); // 5 100 6 7 8
+}
+
+//Print ArrayList Directly 
+System.out.println(l1); //[5 100 6 7 8]
+
+//Adding element at some index i 
+l1.add(1,100);
+
+//Modifying element at index i 
+l1.set(1,10);
+
+//Removing an element at index e 
+l1.remove(Integer.valueOf(7));
+
+//checking if an element exists
+boolean ans= l1.contains(Integer.valueOf(60));  //returns boolean
+
+// If you don't specify class , you can put anything insise l
+ArrayList l = new ArrayList();
+
+l.add("pqrs");
+l.add(1);
+l.add(True);
+
+
+
+

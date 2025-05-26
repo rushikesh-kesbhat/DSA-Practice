@@ -1,0 +1,26 @@
+Time And Space Complexity
+
+----- Time Complexity
+
+Asymptotic Analysis -> No. Of OPerations/Instructions as a function of inputs
+
+ ****Types Of Time Complexity Analysis and their Notations: ***
+ 
+ - Worst case Time Complexity
+	Big O O(n)
+	
+ - Best Case Time Complexity
+	Big Omega Ω(1)
+	
+ - Average Case Time Complexity
+	Big Theta Φ(n)
+
+
+
+
+
+---------- Space Complexity ----------
+
+- Extra memory/Space used by an algorithm proprtional to size
+
+Notations are same as Time Complexity.
